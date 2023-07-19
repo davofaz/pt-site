@@ -2,112 +2,70 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="container mx-auto px-5 mt-8 pb-20 max-w-screen-lg">
+         <div className="w-full">
+             <ul className="flex flex-col md:flex-row">
+                <li>
+                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">Luton</h1>
+                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">International</h1>
+                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">Church</h1></li>
+                <li className="flex">
+                    <h2 className="text-2xl capitalize font-light text-violet-900 font-sans md:self-center mt-2 md:p-10 md:text-right">Enlarging the tent to inherit the Nations</h2>
+                </li>
+              </ul>
+            
+           
+             <Image
+                className="mt-8"
+                src="/pastors-edward-kyllikki-3.jpg"
+                alt="Pastors of Luton International Church"
+                width={1100}
+                height={300}
+                priority
+             />
+             <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">About us</h3>
+             <p className="text-sm mt-4">We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God's plan of salvation was shown for ALL mankind, that they may live.</p>
+             <p className="text-sm mt-4">We believe that by His Spirit, God raised Jesus from the dead and exalted Him as the Lord of lords, to be worshipped and adored. We believe that the second coming of Jesus will happen soon, we will see a mighty revival and a move of the Holy Spirit drawing many people to Christ before His return. It is this GOOD NEWS we love to share: that the love of the Father, salvation through Jesus and life by the Spirit is offered to you.</p>
+             <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>
+         </div>
+         <div>
+             <Image
+                    className="mt-8"
+                    src="/outreach-team-luton.jpg"
+                    alt="Join us for Out Reach in Luton Town Centre most Saturdays"
+                    width={1100}
+                    height={300}
+                    priority
+                 />
+                 <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Join Us</h3>
+                 <p className="text-sm mt-4">Luton Town Centre most Saturdays from 10am - 1pm</p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          </div>
+          <div>
+              <iframe className="mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.62865022137!2d-0.379155283869235!3d51.88599079077175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487637d6dc19b5a7%3A0x24604b227076bccc!2sRaynham+Way+Community+Centre!5e0!3m2!1sen!2suk!4v1565102859193!5m2!1sen!2suk" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen=""></iframe>
+              <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Services</h3>
+              <p className="text-sm mt-4"><span className="font-bold">We meet each Sunday 10.30am at:</span><br/>
+                  <ul>
+                      <li>Raynham Way Community Centre</li>
+                      <li>66 Eaton Green Rd</li>
+                      <li>Luton</li>
+                      <li>LU2 9JE</li>
+                  </ul>
+              </p>
+              <p className="text-sm mt-4"><span className="font-bold">Tuesday Homegroups:</span><br />
+                  At various locations in Luton
+                  Contact us for more information</p>
+              <p className="text-sm mt-4"><span className="font-bold">Fasting and Prayer Meeting:</span><br />
+                  1st Friday each month</p>
+          </div>
+    </main>
+  )
+}
+
+{/* <Image
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+        />*/}
