@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-5 mt-8 pb-20 max-w-screen-lg">
+    <main className="container mx-auto px-5 mt-8 pb-20 max-w-screen-lg"  id="home">
          <div className="w-full">
              <ul className="flex flex-col md:flex-row">
                 <li>
@@ -58,14 +58,19 @@ export default function Home() {
               <p className="text-sm mt-4"><span className="font-bold">Fasting and Prayer Meeting:</span><br />
                   1st Friday each month</p>
           </div>
+          <footer>
+          <a href="#home">
+              <Image
+                        className="mt-12 mx-auto"
+                        src="/logo-512.png"
+                        alt="Back to top"
+                        width={128}
+                        height={128}
+                        priority
+                     />
+            </a>
+          </footer>          
     </main>
+    
   )
 }
-
-{/* <Image
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />*/}
