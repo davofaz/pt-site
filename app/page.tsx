@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import Navigation from './components/Navigation'
+import Navigation from './components/HeaderNav'
 
 export default function Home() {
   return (
     <main className=" flex-1 flex-col container ml-auto mr-auto px-5 mt-6 pb-20 max-w-screen-lg"  id="home">
-              
-             <Navigation />
+           <Navigation />
            <section id="about">
              <Image
                 className="mt-8 px-2"

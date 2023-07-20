@@ -15,9 +15,9 @@ const Navigation = () => {
   };
 
       // Calculate the reduced font size in rem units
-      const h1 = "1.125rem"; // Define your regular font size in rem (e.g., 4rem)
+      const h1 = "1.125rem";
       const h1smaller = `${parseInt(h1) * 0.9}rem`; // Reduce by 10% (0.9)
-      const h2 = "1rem"; // Define your regular font size in rem (e.g., 4rem)
+      const h2 = "1rem"; 
       const h2smaller = `${parseInt(h2) * 0.9}rem`; // Reduce by 10% (0.9)
       const logoWidth = 64;
       const logoWidthSmaller = 48;
