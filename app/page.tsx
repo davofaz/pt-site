@@ -8,7 +8,7 @@ export default function Home() {
              <Navigation />
            <section id="about">
              <Image
-                className="mt-8"
+                className="mt-8 px-2"
                 src="/pastors-edward-kyllikki-3.jpg"
                 alt="Pastors of Luton International Church"
                 width={1100}
@@ -22,19 +22,19 @@ export default function Home() {
          </section>
          <section id="outreach">
              <Image
-                    className="mt-8"
+                    className="mt-8 px-2"
                     src="/outreach-team-luton.jpg"
                     alt="Join us for Out Reach in Luton Town Centre most Saturdays"
                     width={1100}
                     height={300}
                     priority={true}
                  />
-                 <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Join Us</h3>
+                 <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Outreach</h3>
                  <p className="text-sm mt-4">Luton Town Centre most Saturdays from 10am - 1pm</p>
 
           </section>
           <section id="services">
-              <iframe className="mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.62865022137!2d-0.379155283869235!3d51.88599079077175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487637d6dc19b5a7%3A0x24604b227076bccc!2sRaynham+Way+Community+Centre!5e0!3m2!1sen!2suk!4v1565102859193!5m2!1sen!2suk" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true}></iframe>
+              <iframe className="mt-8 px-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.62865022137!2d-0.379155283869235!3d51.88599079077175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487637d6dc19b5a7%3A0x24604b227076bccc!2sRaynham+Way+Community+Centre!5e0!3m2!1sen!2suk!4v1565102859193!5m2!1sen!2suk" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true}></iframe>
               <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Services</h3>
               <p className="text-sm mt-4"><span className="font-bold">We meet each Sunday 10.30am at:</span></p><br/>
                   <ul>
