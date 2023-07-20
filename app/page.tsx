@@ -3,7 +3,7 @@ import Navigation from './components/Navigation'
 
 export default function Home() {
   return (
-    <main className=" flex-1 flex-col container ml-auto mr-auto px-5 mt-8 pb-20 max-w-screen-lg"  id="home">
+    <main className=" flex-1 flex-col container ml-auto mr-auto px-5 mt-6 pb-20 max-w-screen-lg"  id="home">
               
              <Navigation />
            <section id="about">
@@ -13,7 +13,7 @@ export default function Home() {
                 alt="Pastors of Luton International Church"
                 width={1100}
                 height={300}
-                priority
+                priority={true}
              />
              <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">About us</h3>
              <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
