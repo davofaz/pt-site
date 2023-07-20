@@ -1,19 +1,11 @@
 import Image from 'next/image'
+import Navigation from './components/Navigation'
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-5 mt-8 pb-20 max-w-screen-lg"  id="home">
-         <section id="header" className="w-full">
-             <ul className="flex flex-col md:flex-row">
-                <li>
-                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">Luton</h1>
-                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">International</h1>
-                    <h1 className="text-4xl md:text-6xl capitalize font-bold text-violet-900 font-sans">Church</h1></li>
-                <li className="flex">
-                    <h2 className="text-2xl capitalize font-light text-violet-900 font-sans md:self-center mt-2 md:p-10 md:text-right">Enlarging the tent to inherit the Nations</h2>
-                </li>
-             </ul>
-           </section> 
+    <main className=" flex-1 flex-col container ml-auto mr-auto px-5 mt-8 pb-20 max-w-screen-lg"  id="home">
+              
+             <Navigation />
            <section id="about">
              <Image
                 className="mt-8"
@@ -24,7 +16,7 @@ export default function Home() {
                 priority
              />
              <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">About us</h3>
-              <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
+             <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
              <p className="text-sm mt-4">We believe that by His Spirit, God raised Jesus from the dead and exalted Him as the Lord of lords, to be worshipped and adored. We believe that the second coming of Jesus will happen soon, we will see a mighty revival and a move of the Holy Spirit drawing many people to Christ before His return. It is this GOOD NEWS we love to share: that the love of the Father, salvation through Jesus and life by the Spirit is offered to you.</p>
              <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>
          </section>
@@ -35,7 +27,7 @@ export default function Home() {
                     alt="Join us for Out Reach in Luton Town Centre most Saturdays"
                     width={1100}
                     height={300}
-                    priority
+                    priority={true}
                  />
                  <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Join Us</h3>
                  <p className="text-sm mt-4">Luton Town Centre most Saturdays from 10am - 1pm</p>
@@ -70,7 +62,7 @@ export default function Home() {
                         alt="Back to top"
                         width={128}
                         height={128}
-                        priority
+                        priority={true}
                      />
             </a>
           </footer>          
