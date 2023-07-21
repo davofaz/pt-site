@@ -38,7 +38,7 @@ const Navigation = () => {
               <a href="/">
                 <Image
                     src="/logo-512.png"
-                    alt="Luton International Church"
+                    alt="EMC Personal Training"
                     width={logoWidthClass}
                     height={48}
                     priority={true}
