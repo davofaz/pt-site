@@ -51,7 +51,7 @@ const Navigation = () => {
                   <h1 className="text-lg capitalize font-bold text-violet-900 font-sans"
                     style={{ fontSize: h1FontClass }}
                   >
-                    Luton International Church
+                    PT Site
                   </h1>
                 </li>
                 <li className="flex">
@@ -59,17 +59,17 @@ const Navigation = () => {
                     className="text-sm capitalize font-light text-violet-900 font-sans"
                     style={{ fontSize: h2FontClass }}
                   >
-                    Enlarging the tent to inherit the Nations
+                    PT Site description
                   </h2>
                 </li>
               </ul>
             </div>
             <nav className="pb-2 ml-1 mt-2">
                 <ul className="flex flex-row space-x-4 text-violet-900">
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#about">About</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#outreach">Outreach</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#services">Services</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#contact">Contact</a></li>
+                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#about">Section 1</a></li>
+                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#outreach">Section 2</a></li>
+                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#services">Section 3</a></li>
+                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#contact">Section 4</a></li>
 
                 </ul>
             </nav>
