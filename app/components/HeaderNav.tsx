@@ -33,11 +33,11 @@ const Navigation = () => {
    // console.log('image: ', logoWidthClass)
 
     return (
-        <div className="sticky bg-white -top-1" style={{ boxShadow: shadowClass, opacity: opacityClass }}>
-            <div className=" shadow-gray-400 flex flex-row items-center pt-3 pb-4 border-b border-violet-800">
+        <div className="sticky bg-slate-950 -top-1" style={{ boxShadow: shadowClass, opacity: opacityClass }}>
+            <div className=" shadow-black flex flex-row items-center pt-3 pb-4 border-b border-cyan-300 container mx-auto  max-w-screen-lg">
               <a href="/">
                 <Image
-                    src="/logo-512.png"
+                    src="/pt-logo-512.png"
                     alt="EMC Personal Training"
                     width={logoWidthClass}
                     height={48}
@@ -48,28 +48,28 @@ const Navigation = () => {
               </a>
                 <ul className="flex flex-col ml-3">
                 <li>
-                  <h1 className="text-lg capitalize font-bold text-violet-900 font-sans"
+                  <h1 className="text-lg uppercase font-bold text-cyan-300 font-sans"
                     style={{ fontSize: h1FontClass }}
                   >
-                    PT Site
+                    Personal Training
                   </h1>
                 </li>
                 <li className="flex">
                   <h2
-                    className="text-sm capitalize font-light text-violet-900 font-sans"
+                    className="text-sm uppercase font-light text-cyan-300 font-sans"
                     style={{ fontSize: h2FontClass }}
                   >
-                    PT Site description
+                    Wellness Coaching
                   </h2>
                 </li>
               </ul>
             </div>
-            <nav className="pb-2 ml-1 mt-2">
-                <ul className="flex flex-row space-x-4 text-violet-900">
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#about">Section 1</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#outreach">Section 2</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#services">Section 3</a></li>
-                    <li><a className="border-b-4 border-white hover:border-violet-900 active:border-violet-600" href="#contact">Section 4</a></li>
+            <nav className="pb-2 container mx-auto  max-w-screen-lg">
+                <ul className="flex flex-row space-x-4 text-cyan-300">
+                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#about">Section 1</a></li>
+                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#outreach">Section 2</a></li>
+                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#services">Section 3</a></li>
+                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#contact">Section 4</a></li>
 
                 </ul>
             </nav>

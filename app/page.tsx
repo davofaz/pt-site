@@ -3,9 +3,9 @@ import Navigation from './components/HeaderNav'
 
 export default function Home() {
   return (
-    <main className=" flex-1 flex-col container ml-auto mr-auto px-5 mt-6 pb-20 max-w-screen-lg"  id="home">
+    <main className=" flex-1 flex-col"  id="home">
           <Navigation />
-          <section id="about" className="py-12">
+          <section id="about" className="py-12 container bg-slate-700 mx-auto  max-w-screen-lg">
              {/*<Image
                 className="mt-8 px-2"
                 src="/pastors-edward-kyllikki-3.jpg"
@@ -20,7 +20,7 @@ export default function Home() {
              <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>*/}
              Section 1
          </section>
-          <section id="outreach" className="bg-slate-100 p-4 mt-12 py-24">
+          <section id="outreach" className="py-12 bg-slate-800 container mx-auto  max-w-screen-lg">
              {/*<Image
                     
                     src="/outreach-team-luton.jpg"
@@ -34,7 +34,7 @@ export default function Home() {
                  Section 2 
 
           </section>
-          <section id="services" className="mt-12 py-24">
+          <section id="services" className="bg-slate-700 mt-12 py-24 container mx-auto  max-w-screen-lg">
               {/*<iframe className="mt-8 px-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.62865022137!2d-0.379155283869235!3d51.88599079077175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487637d6dc19b5a7%3A0x24604b227076bccc!2sRaynham+Way+Community+Centre!5e0!3m2!1sen!2suk!4v1565102859193!5m2!1sen!2suk" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true}></iframe>
               <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Services</h3>
               <p className="text-sm mt-4"><span className="font-bold">We meet each Sunday 10.30am at:</span></p><br/>
@@ -52,7 +52,7 @@ export default function Home() {
                   1st Friday each month</p>*/}
                   Section 3
           </section>
-          <section id="contact" className="bg-slate-100 p-4 mt-12 py-24 ">             
+          <section id="contact" className="bg-slate-800 p-4 mt-12 py-24 container mx-auto  max-w-screen-lg">             
               {/*<h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Contact</h3>
               <p className="text-sm mt-4"><span className="font-bold"><a href="mailto:edward.masih15@gmail.com"><button className="border-violet-900 border-2 text-violet-900 p-2 rounded-2xl hover:bg-violet-900 hover:text-white">Edward.masih15@gmail.com</button></a></span></p><br/>*/}
               Section 4
@@ -61,7 +61,7 @@ export default function Home() {
           <a href="#home">
               <Image
                         className="mt-12 mx-auto"
-                        src="/logo-512.png"
+                        src="/pt-logo-512.png"
                         alt="Back to top"
                         width={128}
                         height={128}
