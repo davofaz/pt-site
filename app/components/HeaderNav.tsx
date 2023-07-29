@@ -33,11 +33,11 @@ const Navigation = () => {
    // console.log('image: ', logoWidthClass)
 
     return (
-        <div className="sticky bg-slate-950 -top-1" style={{ boxShadow: shadowClass, opacity: opacityClass }}>
-            <div className=" shadow-black flex flex-row items-center pt-3 pb-4 border-b border-cyan-300 container mx-auto  max-w-screen-lg">
+        <div className="sticky bg-black -top-1 z-40" style={{ boxShadow: shadowClass, opacity: opacityClass }}>
+            <div className="shadow-black flex flex-row items-center p-4 pb-4 border-b border-zinc-700 container mx-auto  max-w-screen-lg">
               <a href="/">
                 <Image
-                    src="/pt-logo-512.png"
+                    src="/pt-logo-512-3.png"
                     alt="EMC Personal Training"
                     width={logoWidthClass}
                     height={48}
@@ -46,9 +46,9 @@ const Navigation = () => {
 
                 />
               </a>
-                <ul className="flex flex-col ml-3">
+                <ul className="flex flex-col ml-3 -mt-2">
                 <li>
-                  <h1 className="text-lg uppercase font-bold text-cyan-300 font-sans"
+                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium"
                     style={{ fontSize: h1FontClass }}
                   >
                     Personal Training
@@ -56,20 +56,19 @@ const Navigation = () => {
                 </li>
                 <li className="flex">
                   <h2
-                    className="text-sm uppercase font-light text-cyan-300 font-sans"
+                    className="text-sm uppercase font-light text-white font-sans tracking-widest"
                     style={{ fontSize: h2FontClass }}
                   >
-                    Wellness Coaching
+                    Wellness Coaching 
                   </h2>
                 </li>
               </ul>
             </div>
-            <nav className="pb-2 container mx-auto  max-w-screen-lg">
-                <ul className="flex flex-row space-x-4 text-cyan-300">
-                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#about">Section 1</a></li>
-                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#outreach">Section 2</a></li>
-                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#services">Section 3</a></li>
-                    <li><a className="border-b-4 border-black hover:border-cyan-300 active:border-cyan-100" href="#contact">Section 4</a></li>
+            <nav className="p-4 container mx-auto  max-w-screen-lg">
+                <ul className="flex flex-row space-x-4 text-white font-semibold">
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section2">ABOUT</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section3">SERVICES</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section4">CONTACT</a></li>
 
                 </ul>
             </nav>
