@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main className=" flex-1 flex-col"  id="home">
           <Navigation />
-          <section id="section1" className="p-4 container mx-auto  max-w-screen-lg text-white h-screen">
+          <section id="home" className="p-4 container mx-auto max-w-screen-lg text-white h-screen">
              <Image
-                className="mt-8 px-2"
+                className="mt-8"
                 src="/gym-hero-background-2.jpg"
                 alt="Fully Equipped Private Gym in Dorset"
                 layout='fill'
@@ -19,9 +19,9 @@ export default function Home() {
              <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
              <p className="text-sm mt-4">We believe that by His Spirit, God raised Jesus from the dead and exalted Him as the Lord of lords, to be worshipped and adored. We believe that the second coming of Jesus will happen soon, we will see a mighty revival and a move of the Holy Spirit drawing many people to Christ before His return. It is this GOOD NEWS we love to share: that the love of the Father, salvation through Jesus and life by the Spirit is offered to you.</p>
              <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>*/}
-             <div className="absolute mt-52">
-                <h3 className="pt-12 text-4xl font-bold">Fully Equipped Private Training Facility in Dorset</h3>
-                <ul className="list-disc ml-5 pt-3">
+             <div className="relative mx-10 mt-52 md:max-w-md xl:max-w-xl">
+                <h3 className="py-7 text-5xl font-bold xl:text-6xl">Fully Equipped Private Training Facility in Dorset</h3>
+                <ul className="list-disc ml-5 py-4">
                     <li>Fitness</li>
                     <li>Get Stronger</li>
                     <li>Motivation</li>
@@ -30,42 +30,36 @@ export default function Home() {
                 <button className="rounded-full bg-sky-400 px-5 py-2 mt-4">Book a free session</button>
              </div>
          </section>
-          <section id="section2" className="p-4  container mx-auto  max-w-screen-lg text-white h-screen">
-             {/*<Image
-                    
-                    src="/outreach-team-luton.jpg"
-                    alt="Join us for Out Reach in Luton Town Centre most Saturdays"
-                    width={1100}
-                    height={300}
-                    priority={true}
-                 />
-                 <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Outreach</h3>
-                 <p className="text-sm mt-4">Luton Town Centre most Saturdays from 10am - 1pm</p>*/}
-                 Section 2 
-
+          <section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white h-screen">
+              <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">ABOUT</h3>
+              <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
+                <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
+                     <h4 className="text-2xl mb-4">Lifestyle Guidance</h4>
+                     <p className="text-zinc-400 text-lg">
+                     My own journey to settling into a healthy lifestyle hasn't been a linear one and I understand the many challenges that can be encountered. 
+                     This enables me to bring a high level of empathy, respect, and patience.</p>
+                </div>
+                <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
+                     <h4 className="text-2xl mb-4">Wellness Experience</h4>
+                     <p className="text-zinc-400 text-lg">
+                     Extensive personal experience allows me to guide you. 
+                     My own success story and long career as a healthcare professional has equipped me with the ability to work in harmony with your wants and needs with a fair but firm approach.
+                     </p>
+                </div>
+                <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3">
+                     <h4 className="text-2xl mb-4">Active Coaching</h4>
+                     <p className="text-zinc-400 text-lg">
+                     My education and training completes my coaching arsenal - allowing me to provide you, the client, with the tools and methods you need to achieve your goals.</p>
+                </div>
+              </div>
           </section>
-          <section id="section3" className="p-4 container mx-auto  max-w-screen-lg text-white h-screen">
-              {/*<iframe className="mt-8 px-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.62865022137!2d-0.379155283869235!3d51.88599079077175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487637d6dc19b5a7%3A0x24604b227076bccc!2sRaynham+Way+Community+Centre!5e0!3m2!1sen!2suk!4v1565102859193!5m2!1sen!2suk" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true}></iframe>
-              <h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">Services</h3>
-              <p className="text-sm mt-4"><span className="font-bold">We meet each Sunday 10.30am at:</span></p><br/>
-                  <ul>
-                      <li>Raynham Way Community Centre</li>
-                      <li>66 Eaton Green Rd</li>
-                      <li>Luton</li>
-                      <li>LU2 9JE</li>
-                  </ul>
-              
-              <p className="text-sm mt-4"><span className="font-bold">Tuesday Homegroups:</span><br />
-                  At various locations in Luton
-                  Contact us for more information</p>
-              <p className="text-sm mt-4"><span className="font-bold">Fasting and Prayer Meeting:</span><br />
-                  1st Friday each month</p>*/}
-                  Section 3
+          <section id="services" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white h-screen">
+               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">SERVICES</h3>
           </section>
-          {/*<section id="section4" className="p-4  container mx-auto  max-w-screen-lg text-white h-screen">             
-             
-              Section 4
-          </section>*/}
+          <section id="services" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white h-screen">
+               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">CONTACT</h3>
+          </section>
+          
           <footer className="bg-black">
           <a href="#home">
               <Image

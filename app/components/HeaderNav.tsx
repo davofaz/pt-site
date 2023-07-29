@@ -48,7 +48,7 @@ const Navigation = () => {
               </a>
                 <ul className="flex flex-col ml-3 -mt-2">
                 <li>
-                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium"
+                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium mt-1"
                     style={{ fontSize: h1FontClass }}
                   >
                     Personal Training
@@ -66,9 +66,9 @@ const Navigation = () => {
             </div>
             <nav className="p-4 container mx-auto  max-w-screen-lg">
                 <ul className="flex flex-row space-x-4 text-white font-semibold">
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section2">ABOUT</a></li>
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section3">SERVICES</a></li>
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#section4">CONTACT</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#about">ABOUT</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#services">SERVICES</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#contact">CONTACT</a></li>
 
                 </ul>
             </nav>
