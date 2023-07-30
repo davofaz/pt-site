@@ -61,7 +61,7 @@ const Navigation = () => {
                                 transition={{delay:0.3}}>
                 <ul className="flex flex-col ml-3 -mt-2">
                 <li>
-                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium mt-1"
+                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium"
                     style={{ fontSize: h1FontClass }}
                   >
                     Personal Training

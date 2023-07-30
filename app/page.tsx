@@ -1,7 +1,33 @@
 'use client'
+import React, { useEffect } from "react";
 import Image from 'next/image'
 import Navigation from './components/HeaderNav'
-import { motion } from 'framer-motion';
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
+
+const sectionVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.6 } },
+  hidden: { opacity: 0, scale: 0.5 }
+};
+
+function Section({children}) {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={sectionVariants}
+      className="pt-36"
+    >{children}</motion.div>
+  );
+}
 
 export default function Home() {
   return (
@@ -27,7 +53,7 @@ export default function Home() {
                 animate={{ opacity: 1, x: 0}}
                 transition={{delay:1}}>
              <div className="relative mx-10 mt-12 md:max-w-md xl:max-w-xl">
-                <h3 className="py-7 text-5xl font-bold xl:text-6xl">Fully Equipped Private Training Facility in Dorset</h3>
+                <h3 className="py-4 text-5xl font-bold xl:text-6xl">Fully Equipped Private Training Facility in Dorset</h3>
                 <ul className="list-disc ml-5 py-4">
                     <li>Fitness</li>
                     <li>Get Stronger</li>
@@ -38,14 +64,9 @@ export default function Home() {
              </div>
              </motion.div>
          </section>
-          <motion.section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white min-h-screen"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    animate={{ opacity: 1}}
-                    transition={{duration: 0.5, delay: 2}}
-          
-          >
-              <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">ABOUT</h3>
+          <section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white min-h-screen">
+          <Section>
+              <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900">ABOUT</h3>
               <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
                 <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
                      <h4 className="text-2xl text-sky-500 mb-4">Lifestyle Guidance</h4>
@@ -72,9 +93,11 @@ export default function Home() {
                      <p className="text-zinc-400 text-lg">
                      Level 3 Personal Training / Level 3 Supporting Pre and Postnatal Exercise/ Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach/ Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health First Aider/ Level 2 Adult Social Care </p>
                 </div>
-          </motion.section>
+            </Section>
+          </section>
           <section id="services" className="p-4 mt-12 container mx-auto  max-w-screen-lg text-white min-h-screen">
-               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">SERVICES</h3>
+          <Section>
+               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900">SERVICES</h3>
                 <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
                        <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/2 md:mr-4">
                          <Image
@@ -102,9 +125,11 @@ export default function Home() {
                          </p>
                     </div>                
               </div>
+            </Section>
           </section>
           <section id="contact" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white min-h-screen">
-               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">CONTACT</h3>
+            <Section>
+               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900">CONTACT</h3>
                <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
 
                        <div className="bg-black mt-12 p-8 drop-shadow-md flex flex-col md:flex-row">
@@ -147,8 +172,8 @@ export default function Home() {
                             </div>
                         </div>
                 </div>
+              </Section>
            </section>
-          
           <footer className="bg-black py-8 w-full text-white items-center">
           <a href="#home">
               <Image
@@ -161,7 +186,7 @@ export default function Home() {
                      />
             </a>
             <small className="text-zinc-400 block text-center mx-auto">
-                Copyright &copy; 2023 Em C coaching for a healthier life - All Rights Reserved.
+                Copyright &copy; 2023 Em C coaching for a healthier life<br />All Rights Reserved.
             </small>
           </footer>          
     </main>
