@@ -56,7 +56,7 @@ export default function Home() {
           <section id="services" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white h-screen">
                <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">SERVICES</h3>
           </section>
-          <section id="services" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white h-screen">
+          <section id="contact" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white h-screen">
                <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">CONTACT</h3>
           </section>
           
