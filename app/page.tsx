@@ -27,34 +27,34 @@ export default function Home() {
                     <li>Motivation</li>
                     <li>Feel Good!</li>
                 </ul>
-                <button className="rounded-full bg-sky-400 px-5 py-2 mt-4">Book a free session</button>
+                <a href="#contact"><button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Book a free session</button></a>
              </div>
          </section>
           <section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white min-h-screen">
               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">ABOUT</h3>
               <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
                 <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
-                     <h4 className="text-2xl mb-4">Lifestyle Guidance</h4>
+                     <h4 className="text-2xl text-sky-500 mb-4">Lifestyle Guidance</h4>
                      <p className="text-zinc-400 text-lg">
                      My own journey to settling into a healthy lifestyle hasn&apos;t been a linear one and I understand the many challenges that can be encountered. 
                      This enables me to bring a high level of empathy, respect, and patience.</p>
                 </div>
                 <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
-                     <h4 className="text-2xl mb-4">Wellness Experience</h4>
+                     <h4 className="text-2xl text-sky-500 mb-4">Wellness Experience</h4>
                      <p className="text-zinc-400 text-lg">
                      Extensive personal experience allows me to guide you. 
                      My own success story and long career as a healthcare professional has equipped me with the ability to work in harmony with your wants and needs with a fair but firm approach.
                      </p>
                 </div>
                 <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3">
-                     <h4 className="text-2xl mb-4">Active Coaching</h4>
+                     <h4 className="text-2xl text-sky-500 mb-4">Active Coaching</h4>
                      <p className="text-zinc-400 text-lg">
                      My education and training completes my coaching arsenal - allowing me to provide you, the client, with the tools and methods you need to achieve your goals.</p>
                 </div>
                 
               </div>
               <div className="bg-black mt-6 p-8 drop-shadow-md">
-                     <h4 className="text-2xl mb-4">Qualifications</h4>
+                     <h4 className="text-2xl text-sky-500 mb-4">Qualifications</h4>
                      <p className="text-zinc-400 text-lg">
                      Level 3 Personal Training / Level 3 Supporting Pre and Postnatal Exercise/ Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach/ Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health First Aider/ Level 2 Adult Social Care </p>
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
                     <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/2 md:mr-4">
                         <Image
                             src="/services-coaching-4.jpg"
-                            alt="Free consultation"
+                            alt="1 to 1 Coaching"
                             width={640}
                             height={430}
                             priority={true}
@@ -91,12 +91,54 @@ export default function Home() {
           </section>
           <section id="contact" className="p-4 mt-24 container mx-auto  max-w-screen-lg text-white min-h-screen">
                <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">CONTACT</h3>
-          </section>
+               <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
+
+                       <div className="bg-black mt-12 p-8 drop-shadow-md flex flex-col md:flex-row">
+                            <div className="mr-6 md:basis-1/2 mb-6">
+                                <h4 className="text-2xl text-sky-500 my-4">Put your health first and get in contact</h4>
+
+                                <ul>
+                                    <li>40 Henbury View Road</li>
+                                    <li>Corfe Mullen</li>
+                                    <li>Wimborne</li>
+                                    <li>BH21 3TT</li>
+                                    <li>United Kingdom</li>
+                                    
+                                </ul>
+
+                                <h4 className="text-2xl text-sky-500 my-4">To book a session or contact for more info:</h4>
+                                <ul>
+                                    <li>
+                                        <a href="mailto:info@emcpersonaltrainer.uk">
+                                            <button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Email</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:07725584005">
+                                            <button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Call: 07725584005</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div className="md:basis-1/2">
+                                <Image
+                                
+                                    src="/contact-me.jpg"
+                                    alt="Contact Me!"
+                                    width={640}
+                                    height={430}
+                                    priority={true}
+                                 />  
+                            </div>
+                        </div>
+                </div>
+           </section>
           
-          <footer className="bg-black">
+          <footer className="bg-black py-8 w-full text-white items-center">
           <a href="#home">
               <Image
-                        className="mt-12 mx-auto"
+                        className="my-12 mx-auto"
                         src="/pt-logo-512-3.png"
                         alt="Back to top"
                         width={128}
@@ -104,6 +146,9 @@ export default function Home() {
                         priority={true}
                      />
             </a>
+            <small className="text-zinc-400 block text-center mx-auto">
+                Copyright &copy; 2023 Em C coaching for a healthier life - All Rights Reserved.
+            </small>
           </footer>          
     </main>
     

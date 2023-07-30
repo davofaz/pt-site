@@ -15,13 +15,13 @@ const Navigation = () => {
     };
 
     // Calculate the reduced font size in rem units
-    const h1 = "1.125rem";
+    const h1 = "1.5rem";
     const h1smaller = `${parseInt(h1) * 0.95}rem`; // Reduce by 10% (1)
-    const h2 = "1rem";
+    const h2 = "1.125rem";
     const h2smaller = `${parseInt(h2) - 0.2}rem`; // Reduce by -2 (0.7)
     const logoWidth = 48;
     const logoWidthSmaller = 42;
-    const opacity = "0.95";
+    const opacity = "0.85";
     const shadow = "rgba(0, 0, 0, 0.45) 0px 25px 20px -20px";
 
     // Calculate the class name based on scroll position
