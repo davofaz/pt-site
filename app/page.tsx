@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import Navigation from './components/HeaderNav'
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -19,6 +21,11 @@ export default function Home() {
              <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
              <p className="text-sm mt-4">We believe that by His Spirit, God raised Jesus from the dead and exalted Him as the Lord of lords, to be worshipped and adored. We believe that the second coming of Jesus will happen soon, we will see a mighty revival and a move of the Holy Spirit drawing many people to Christ before His return. It is this GOOD NEWS we love to share: that the love of the Father, salvation through Jesus and life by the Spirit is offered to you.</p>
              <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>*/}
+             <motion.div                        
+                className="mt-2 mx-4"
+                initial={{ opacity: 0, x: 120}}
+                animate={{ opacity: 1, x: 0}}
+                transition={{delay:1}}>
              <div className="relative mx-10 mt-12 md:max-w-md xl:max-w-xl">
                 <h3 className="py-7 text-5xl font-bold xl:text-6xl">Fully Equipped Private Training Facility in Dorset</h3>
                 <ul className="list-disc ml-5 py-4">
@@ -29,8 +36,15 @@ export default function Home() {
                 </ul>
                 <a href="#contact"><button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Book a free session</button></a>
              </div>
+             </motion.div>
          </section>
-          <section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white min-h-screen">
+          <motion.section id="about" className="p-4 container mx-auto  max-w-screen-lg text-white min-h-screen"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    animate={{ opacity: 1}}
+                    transition={{duration: 0.5, delay: 2}}
+          
+          >
               <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">ABOUT</h3>
               <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
                 <div className="bg-black mt-12 p-8 drop-shadow-md md:basis-1/3 md:mr-4">
@@ -58,7 +72,7 @@ export default function Home() {
                      <p className="text-zinc-400 text-lg">
                      Level 3 Personal Training / Level 3 Supporting Pre and Postnatal Exercise/ Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach/ Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health First Aider/ Level 2 Adult Social Care </p>
                 </div>
-          </section>
+          </motion.section>
           <section id="services" className="p-4 mt-12 container mx-auto  max-w-screen-lg text-white min-h-screen">
                <h3 className="text-6xl md:text-9xl font-bold border-t text-zinc-900 border-zinc-900 pt-4">SERVICES</h3>
                 <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
