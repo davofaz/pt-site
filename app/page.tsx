@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from "react";
+import React, { ReactNode, useEffect } from "react";
 import Image from 'next/image'
 import Navigation from './components/HeaderNav'
 import { useAnimation, motion } from 'framer-motion';
