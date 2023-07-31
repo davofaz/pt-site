@@ -49,7 +49,6 @@ const Navigation = () => {
                         width={logoWidthClass}
                         height={48}
                         priority={true}
-                        //style={{ width: "auto", height: "auto" }}
 
                     />
                </motion.div>

@@ -49,10 +49,6 @@ export default function Home() {
                 objectPosition='center'
                 priority={true}
              />
-             {/*<h3 className="text-3xl capitalize font-medium text-violet-900 font-sans mt-4">About us</h3>
-             <p className="text-sm mt-4">{"We are Spirit filled Christians who love the Lord Jesus Christ. We are from all different backgrounds and races and although we're not affiliated to any specific denomination, we worship Jesus the King of kings together. We are a Bible believing, charismatic international church, practising the gifts of the Holy Spirit and providing ministry in all areas such as Healing and Deliverance. We believe that God loved us so much that He sent Jesus into the world, to become a sacrifice for our sins. Through Jesus' death on the cross, and the grace he offered us. God\'s plan of salvation was shown for ALL mankind, that they may live."}</p>
-             <p className="text-sm mt-4">We believe that by His Spirit, God raised Jesus from the dead and exalted Him as the Lord of lords, to be worshipped and adored. We believe that the second coming of Jesus will happen soon, we will see a mighty revival and a move of the Holy Spirit drawing many people to Christ before His return. It is this GOOD NEWS we love to share: that the love of the Father, salvation through Jesus and life by the Spirit is offered to you.</p>
-             <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>*/}
              <motion.div                        
                 className="mt-2 mx-4"
                 initial={{ opacity: 0, x: 10}}
