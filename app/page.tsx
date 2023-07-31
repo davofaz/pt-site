@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Navigation from './components/HeaderNav'
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import DfCredit from './components/DfCredit'
 
 const sectionVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.6 } },
@@ -188,7 +189,9 @@ export default function Home() {
             <small className="text-zinc-400 block text-center mx-auto">
                 Copyright &copy; 2023 Em C coaching for a healthier life<br />All Rights Reserved.
             </small>
-          </footer>          
+            
+          </footer>
+          <DfCredit />
     </main>
     
   )
