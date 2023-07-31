@@ -20,6 +20,7 @@ export default function RootLayout({
     <Head>
         <title>{metadata.title as string}</title>
         <meta name="description" content={metadata.description as string} />
+        <meta property="og:image" content="/pt-logo-512-3.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={inter.className}>{children}</body>
