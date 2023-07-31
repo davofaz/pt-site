@@ -41,7 +41,7 @@ const Navigation = () => {
                     style={{ margin:'0 auto', textAlign:'center' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1}}
-                    transition={{delay:0.1}}
+                    transition={{delay:0.4}}
                     > 
                     <Image
                         src="/pt-logo-512-3.png"
@@ -56,9 +56,9 @@ const Navigation = () => {
               </a>
               <motion.div                        
                                 className="mt-2 mx-4"
-                                initial={{ opacity: 0, x: 60}}
+                                initial={{ opacity: 0, x: 80}}
                                 animate={{ opacity: 1, x: 0}}
-                                transition={{delay:0.3}}>
+                                transition={{delay:0.6}}>
                 <ul className="flex flex-col ml-3 -mt-2">
                 <li>
                   <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium"

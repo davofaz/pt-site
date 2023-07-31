@@ -32,7 +32,12 @@ function Section({children}) {
 
 export default function Home() {
   return (
-    <main className=" flex-1 flex-col"  id="home">
+    <motion.main 
+        className=" flex-1 flex-col"
+        id="home"
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+        >
           <Navigation />
           <section id="home" className="p-4 container mx-auto max-w-screen-lg text-white min-h-screen">
              <Image
@@ -50,9 +55,9 @@ export default function Home() {
              <p className="text-sm font-bold mt-2">Pastors Edward and Kyllikki Masih</p>*/}
              <motion.div                        
                 className="mt-2 mx-4"
-                initial={{ opacity: 0, x: 120}}
+                initial={{ opacity: 0, x: 10}}
                 animate={{ opacity: 1, x: 0}}
-                transition={{delay:1}}>
+                transition={{delay:1.2}}>
              <div className="relative mx-10 mt-12 md:max-w-md xl:max-w-xl">
                 <h3 className="py-4 text-5xl font-bold xl:text-6xl">Fully Equipped Private Training Facility in Dorset</h3>
                 <ul className="list-disc ml-5 py-4">
@@ -192,7 +197,7 @@ export default function Home() {
             
           </footer>
           <DfCredit />
-    </main>
+    </motion.main>
     
   )
 }
