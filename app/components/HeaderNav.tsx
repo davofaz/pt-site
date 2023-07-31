@@ -16,9 +16,9 @@ const Navigation = () => {
     };
 
     // Calculate the reduced font size in rem units
-    const h1 = "1.5rem";
+    const h1 = "1.15rem";
     const h1smaller = `${parseInt(h1) * 0.95}rem`; // Reduce by 10% (1)
-    const h2 = "1.125rem";
+    const h2 = "1.1rem";
     const h2smaller = `${parseInt(h2) - 0.2}rem`; // Reduce by -2 (0.7)
     const logoWidth = 64;
     const logoWidthSmaller = 48;
@@ -68,7 +68,7 @@ const Navigation = () => {
                 </li>
                 <li className="flex">
                   <h2
-                    className="text-sm uppercase font-light text-white font-sans tracking-widest"
+                    className="text-sm uppercase font-light text-white font-sans"
                     style={{ fontSize: h2FontClass }}
                   >
                     Wellness Coaching 
