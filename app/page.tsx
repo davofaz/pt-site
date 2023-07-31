@@ -11,7 +11,7 @@ const sectionVariants = {
   hidden: { opacity: 0, scale: 0.5 }
 };
 
-function Section({children}) {
+function Section({ children }: { children: ReactNode}) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
