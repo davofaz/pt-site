@@ -1,5 +1,5 @@
 'use client'
-import React, { ReactNode, useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from 'next/image'
 import Navigation from './components/HeaderNav'
 import { useAnimation, motion } from 'framer-motion';
@@ -11,7 +11,7 @@ const sectionVariants = {
   hidden: { opacity: 0, scale: 0.5 }
 };
 
-function Section({ children }: { children: ReactNode}) {
+function Section({ children }: { children: React.ReactNode}) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
