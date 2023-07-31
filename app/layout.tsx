@@ -7,9 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'EMC Personal Training & Wellness Coaching',
-  description: 'Fully Equipped Private Training Facility in Dorset - 1 to 1 Personal Training and Coaching',
-  openGraphImage: '/pt-logo-512-3.png'
-
+  description: 'Fully Equipped Private Training Facility in Dorset - 1 to 1 Personal Training and Coaching!'
 }
 
 export default function RootLayout({
@@ -23,7 +21,6 @@ export default function RootLayout({
         <title>{metadata.title as string}</title>
         <meta name="description" content={metadata.description as string} />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content={metadata.openGraphImage as string} />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
