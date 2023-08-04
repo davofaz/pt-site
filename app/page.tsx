@@ -150,7 +150,7 @@ export default function Home() {
                                 <h4 className="text-2xl text-sky-500 my-4">To book a session or contact for more info:</h4>
                                 <ul>
                                     <li>
-                                        <a href="mailto:info@emcpersonaltrainer.uk">
+                                        <a href="mailto:emcptcoachme@gmail.com">
                                             <button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Email</button>
                                         </a>
                                     </li>
