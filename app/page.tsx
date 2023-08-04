@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import Image from 'next/image'
+import Link from 'next/link'
 import Navigation from './components/HeaderNav'
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
@@ -179,7 +180,7 @@ export default function Home() {
           <footer className="bg-black py-8 w-full text-white items-center">
           <a href="#home">
               <Image
-                        className="my-12 mx-auto"
+                        className="mt-12 mx-auto"
                         src="/pt-logo-512-3.png"
                         alt="Back to top"
                         width={128}
@@ -187,6 +188,32 @@ export default function Home() {
                         priority={true}
                      />
             </a>
+            <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
+                       <div className="bg-black mt-2 p-2 drop-shadow-md md:basis-1/2 md:mr-4">
+                         <Link href="https://www.cimspa.co.uk/" target="_blank">
+                           <Image
+                            className="my-4 mx-auto"
+                            src="/cimspa-white-logo.png"
+                            alt="Back to top"
+                            width={128}
+                            height={128}
+                            priority={true}
+                            />
+                         </Link>
+                    </div>
+                    <div className="bg-black mt-2 p-2 drop-shadow-md md:basis-1/2 md:mr-4">
+                        <Link href="https://www.nasm.org/" target="_blank"> 
+                            <Image
+                                className="my-4 mx-auto invert"
+                                src="/nasm-premier-global-logo.png"
+                                alt="Back to top"
+                                width={128}
+                                height={128}
+                                priority={true}
+                             />
+                         </Link>
+                    </div>                
+              </div>
             <small className="text-zinc-400 block text-center mx-auto">
                 Copyright &copy; 2023 Em C coaching for a healthier life<br />All Rights Reserved.
             </small>
