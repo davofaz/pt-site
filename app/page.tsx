@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import Image from 'next/image'
+import Link from 'next/link'
 import Navigation from './components/HeaderNav'
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
@@ -92,8 +93,14 @@ export default function Home() {
               </div>
               <div className="bg-black mt-6 p-8 drop-shadow-md">
                      <h4 className="text-2xl text-sky-500 mb-4">Qualifications</h4>
-                     <p className="text-zinc-400 text-lg">
-                     Level 3 Personal Training / Level 3 Supporting Pre and Postnatal Exercise/ Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach/ Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health First Aider/ Level 2 Adult Social Care </p>
+                     <ul className="text-zinc-400 text-lg list-disc ml-4">
+                        <li>Level 3 Personal Training</li>
+                        <li>Level 3 Supporting Pre and Postnatal Exercise</li>
+                        <li>Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach</li>
+                        <li>Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health </li>
+                        <li>First Aider</li>
+                        <li>Level 2 Adult Social Care </li>
+                      </ul>
                 </div>
             </Section>
           </section>
@@ -150,7 +157,7 @@ export default function Home() {
                                 <h4 className="text-2xl text-sky-500 my-4">To book a session or contact for more info:</h4>
                                 <ul>
                                     <li>
-                                        <a href="mailto:info@emcpersonaltrainer.uk">
+                                        <a href="mailto:emcptcoachme@gmail.com">
                                             <button className="rounded-full bg-sky-400 px-5 py-2 mt-4 hover:bg-white hover:text-black">Email</button>
                                         </a>
                                     </li>
@@ -179,7 +186,7 @@ export default function Home() {
           <footer className="bg-black py-8 w-full text-white items-center">
           <a href="#home">
               <Image
-                        className="my-12 mx-auto"
+                        className="mt-12 mx-auto"
                         src="/pt-logo-512-3.png"
                         alt="Back to top"
                         width={128}
@@ -187,6 +194,32 @@ export default function Home() {
                         priority={true}
                      />
             </a>
+            <div className="mt-6 flex flex-col md:flex-row md:place-content-stretch">
+                       <div className="bg-black mt-2 p-2 drop-shadow-md md:basis-1/2 md:mr-4">
+                         <Link href="https://www.cimspa.co.uk/" target="_blank">
+                           <Image
+                            className="my-4 mx-auto"
+                            src="/cimspa-white-logo.png"
+                            alt="Back to top"
+                            width={128}
+                            height={128}
+                            priority={true}
+                            />
+                         </Link>
+                    </div>
+                    <div className="bg-black mt-2 p-2 drop-shadow-md md:basis-1/2 md:mr-4">
+                        <Link href="https://www.nasm.org/" target="_blank"> 
+                            <Image
+                                className="my-4 mx-auto invert"
+                                src="/nasm-premier-global-logo.png"
+                                alt="Back to top"
+                                width={128}
+                                height={128}
+                                priority={true}
+                             />
+                         </Link>
+                    </div>                
+              </div>
             <small className="text-zinc-400 block text-center mx-auto">
                 Copyright &copy; 2023 Em C coaching for a healthier life<br />All Rights Reserved.
             </small>
