@@ -93,8 +93,14 @@ export default function Home() {
               </div>
               <div className="bg-black mt-6 p-8 drop-shadow-md">
                      <h4 className="text-2xl text-sky-500 mb-4">Qualifications</h4>
-                     <p className="text-zinc-400 text-lg">
-                     Level 3 Personal Training / Level 3 Supporting Pre and Postnatal Exercise/ Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach/ Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health First Aider/ Level 2 Adult Social Care </p>
+                     <ul className="text-zinc-400 text-lg list-disc ml-4">
+                        <li>Level 3 Personal Training</li>
+                        <li>Level 3 Supporting Pre and Postnatal Exercise</li>
+                        <li>Level 3 Corrective Exercise/ Behaviour Change and Wellness Specialist/ Nutrition Coach</li>
+                        <li>Level 2 Group Fitness/ Senior Fitness Specialist/ Youth Exercise Specialist/ Mental Health </li>
+                        <li>First Aider</li>
+                        <li>Level 2 Adult Social Care </li>
+                      </ul>
                 </div>
             </Section>
           </section>
