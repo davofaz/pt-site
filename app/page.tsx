@@ -7,6 +7,9 @@ import { useAnimation, motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import DfCredit from './components/DfCredit'
 
+const date = new Date();
+const year = date.getFullYear().toString();
+
 const sectionVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.6 } },
   hidden: { opacity: 0, scale: 0.5 }
@@ -130,7 +133,7 @@ export default function Home() {
                          />         
                          <h4 className="text-2xl text-sky-500 my-4">1 to 1 Coaching Session</h4>
                          <p className="text-zinc-400 text-lg">
-                         &#163; 1hr | 25
+                          1hr | &#163;25
                          </p>
                     </div>                
               </div>
@@ -221,7 +224,7 @@ export default function Home() {
                     </div>                
               </div>
             <small className="text-zinc-400 block text-center mx-auto">
-                Copyright &copy; 2023 Em C coaching for a healthier life<br />All Rights Reserved.
+                Copyright &copy; { year } Em C coaching for a healthier life<br />All Rights Reserved.
             </small>
             
           </footer>
