@@ -58,9 +58,9 @@ const Navigation = () => {
                                 initial={{ opacity: 0, x: 80}}
                                 animate={{ opacity: 1, x: 0}}
                                 transition={{delay:0.6}}>
-                <ul className="flex flex-col ml-3 -mt-2">
+                <ul className="flex flex-col ml-2 -mt-2">
                 <li>
-                  <h1 className="text-lg uppercase font-bold text-sky-400 font-sans font-medium"
+                  <h1 className="text-lg font-bold text-sky-400 font-sans font-medium"
                     style={{ fontSize: h1FontClass }}
                   >
                     Personal Training
@@ -68,7 +68,7 @@ const Navigation = () => {
                 </li>
                 <li className="flex">
                   <h2
-                    className="text-sm uppercase font-light text-white font-sans"
+                    className="text-sm font-light text-white font-sans"
                     style={{ fontSize: h2FontClass }}
                   >
                     Wellness Coaching 
@@ -79,9 +79,9 @@ const Navigation = () => {
             </div>
             <nav className="p-4 container mx-auto  max-w-screen-lg">
                 <ul className="flex flex-row space-x-4 text-white font-semibold">
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#about">ABOUT</a></li>
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#services">SERVICES</a></li>
-                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#contact">CONTACT</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#about">About</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#services">Services</a></li>
+                    <li><a className="p-1 hover:bg-white hover:text-black active:border-cyan-100" href="#contact">Contact</a></li>
 
                 </ul>
             </nav>
