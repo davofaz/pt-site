@@ -45,12 +45,10 @@ export default function Home() {
           <Navigation />
           <section id="home" className="p-4 container mx-auto max-w-screen-lg text-white min-h-screen">
              <Image
-                className="mt-8"
+                className="mt-8 object-cover"
                 src="/gym-hero-background-2.jpg"
                 alt="Fully Equipped Private Gym in Dorset"
-                layout='fill'
-                objectFit='cover'
-                objectPosition='center'
+                fill
                 priority={true}
              />
              <motion.div                        
